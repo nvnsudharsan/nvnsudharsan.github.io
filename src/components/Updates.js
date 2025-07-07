@@ -3,6 +3,11 @@ import './Section.css';
 
 const updates = [
   {
+    title: 'Organizing a workshop on land surface modeling: Advancing Land Modeling for Gulf Coast Resilience at UT Austin',
+    date: 'Aug 14 - 15, 2025',
+    link: 'https://landmodelling.github.io/'
+  },
+  {
     title: 'Attending Cesium Developer Conference in Philadelphia',
     date: 'June 23 - 25, 2025',
     link: 'https://cesium.com/events/cesium-developer-conference/'
