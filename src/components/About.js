@@ -46,7 +46,7 @@ function About() {
           <ul>
             <li><strong>Programming & Scripting:</strong> Python, Bash, MATLAB, R</li>
             <li><strong>Machine Learning & AI:</strong> PyTorch, TensorFlow, Scikit-learn, dask</li>
-            <li><strong>Visualization:</strong> Matplotlib, Plotly, Seaborn</li>
+            <li><strong>Visualization:</strong> Matplotlib, Plotly, Seaborn, CesiumJS</li>
             <li><strong>Data Processing:</strong> xarray, NumPy, Pandas, GDAL, GeoPandas, Rasterio, zarr-python</li>
             <li><strong>GIS & Remote Sensing:</strong> ArcGIS, QGIS, ERDAS Imagine, Google Earth Engine</li>
             <li><strong>Modeling & Simulation:</strong> WRF, HRLDAS (NoahMP), HEC-RAS, EPANET, STAAD Pro, SACS</li>
