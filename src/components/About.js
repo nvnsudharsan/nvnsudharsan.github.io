@@ -77,6 +77,7 @@ function About() {
               alt="GitHub Trophies"
               style={{ maxWidth: '100%' }}
             />
+          </div>
         </div>
       </div>
       <div className="about-image">
