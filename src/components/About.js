@@ -63,7 +63,7 @@ function About() {
           <h3>GitHub Activity</h3>
           <div className="github-stats">
             <img
-              src="https://github-readme-stats.vercel.app/api?username=nvnsudharsan&theme=github_dark&show_icons=true&hide_border=false"
+              src="https://github-readme-stats.vercel.app/api?username=nvnsudharsan&theme=github_dark&show_icons=true&hide_border=true"
               alt="Naveen's GitHub Stats"
               referrerPolicy="no-referrer"
               style={{ maxWidth: '100%', marginBottom: '1rem' }}
