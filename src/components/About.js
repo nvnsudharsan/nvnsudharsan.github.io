@@ -61,7 +61,7 @@ function About() {
             <li><a href="https://homepages.iitb.ac.in/~skarmakar/" target="_blank" rel="noopener noreferrer"><strong>ESRL</strong></a></li>
           </ul>
           <h3>GitHub Activity</h3>
-          <div className="github-stats-row">
+          <div className="github-stats">
             <img
               src="https://github-readme-stats.vercel.app/api?username=nvnsudharsan&theme=github_dark&show_icons=true&hide_border=false"
               alt="Naveen's GitHub Stats"
