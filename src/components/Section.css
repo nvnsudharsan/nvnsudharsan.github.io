@@ -160,6 +160,21 @@
   display: block;
   margin: 0 auto;
 }
+.github-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.github-stats-row img {
+  max-width: 100%;
+  width: 350px;
+  height: auto;
+  flex-shrink: 0;
+}
 @keyframes fadeInUp {
   from {
     transform: translateY(40px);
