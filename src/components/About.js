@@ -68,6 +68,7 @@ function About() {
               referrerPolicy="no-referrer"
               style={{ maxWidth: '100%', marginBottom: '1rem' }}
             />
+          </div>
         </div>
       </div>
       <div className="about-image">
