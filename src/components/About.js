@@ -68,12 +68,6 @@ function About() {
               referrerPolicy="no-referrer"
               style={{ maxWidth: '100%', marginBottom: '1rem' }}
             />
-            <img
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=nvnsudharsan&theme=github_dark&layout=compact&hide_border=false"
-              alt="Top Languages"
-              style={{ maxWidth: '100%', marginBottom: '1rem' }}
-            />
-          </div>
         </div>
       </div>
       <div className="about-image">
