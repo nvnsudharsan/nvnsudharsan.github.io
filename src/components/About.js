@@ -60,6 +60,23 @@ function About() {
             <li><a href="https://www.utcitycolab.org/" target="_blank" rel="noopener noreferrer"><strong>UT City Colab</strong></a></li>
             <li><a href="https://homepages.iitb.ac.in/~skarmakar/" target="_blank" rel="noopener noreferrer"><strong>ESRL</strong></a></li>
           </ul>
+          <h3>GitHub Activity</h3>
+          <div className="github-stats">
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=nvnsudharsan&theme=github_dark&show_icons=true&hide_border=false"
+              alt="Naveen's GitHub Stats"
+              style={{ maxWidth: '100%', marginBottom: '1rem' }}
+            />
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=nvnsudharsan&theme=github_dark&layout=compact&hide_border=false"
+              alt="Top Languages"
+              style={{ maxWidth: '100%', marginBottom: '1rem' }}
+            />
+            <img
+              src="https://github-profile-trophy.vercel.app/?username=nvnsudharsan&theme=radical&no-frame=false&no-bg=false&margin-w=4"
+              alt="GitHub Trophies"
+              style={{ maxWidth: '100%' }}
+            />
         </div>
       </div>
       <div className="about-image">
