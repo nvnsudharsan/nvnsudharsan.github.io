@@ -73,11 +73,6 @@ function About() {
               alt="Top Languages"
               style={{ maxWidth: '100%', marginBottom: '1rem' }}
             />
-            <img
-              src="https://github-profile-trophy.vercel.app/?username=nvnsudharsan&theme=radical&no-frame=false&no-bg=false&margin-w=4"
-              alt="GitHub Trophies"
-              style={{ maxWidth: '100%' }}
-            />
           </div>
         </div>
       </div>
