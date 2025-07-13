@@ -156,7 +156,10 @@
   padding-right: 4px;
   animation: blink 0.8s infinite;
 }
-/* Optional smooth animation */
+.github-stats img {
+  display: block;
+  margin: 0 auto;
+}
 @keyframes fadeInUp {
   from {
     transform: translateY(40px);
