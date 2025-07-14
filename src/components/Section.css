@@ -162,19 +162,19 @@
 }
 .github-stats-row {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-top: 1rem;
 }
 
 .github-stats-row img {
-  max-width: 100%;
-  width: 350px;
+  width: 340px;
   height: auto;
-  flex-shrink: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(91, 192, 255, 0.2);
 }
+
 @keyframes fadeInUp {
   from {
     transform: translateY(40px);
