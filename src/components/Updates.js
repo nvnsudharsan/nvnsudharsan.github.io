@@ -7,6 +7,10 @@ const updates = [
     date: 'Aug 14 - 15, 2025',
     link: 'https://landmodelling.github.io/'
   },
+    {
+    title: 'Attending CROCUS AIDT Workshop at Argonne National Lab',
+    date: 'July 29 - 30, 2025',
+  },
   {
     title: 'Attending Cesium Developer Conference in Philadelphia',
     date: 'June 23 - 25, 2025',
