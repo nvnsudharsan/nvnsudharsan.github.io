@@ -7,7 +7,12 @@ const updates = [
     date: 'Aug 14 - 15, 2025',
     link: 'https://landmodelling.github.io/'
   },
-    {
+  {
+    title: 'Attending Atmospheric Urban Digital Twin organised by UT Austin',
+    date: 'Aug 7 - 8, 2025',
+
+  },
+  {
     title: 'Attending CROCUS AIDT Workshop at Argonne National Lab',
     date: 'July 29 - 30, 2025',
   },
