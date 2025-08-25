@@ -1,4 +1,25 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import './Photography.css'; 
+
+
+const photos = [
+`${process.env.PUBLIC_URL}/images/photography/austin_skyline.jpg`,
+`${process.env.PUBLIC_URL}/images/photography/milky_way.jpg`,
+`${process.env.PUBLIC_URL}/images/photography/trail_bridge.jpg`,
+`${process.env.PUBLIC_URL}/images/photography/desert_road.jpg`,
+`${process.env.PUBLIC_URL}/images/photography/longhorn_game.jpg`,
+`${process.env.PUBLIC_URL}/images/photography/lake_sunset.jpg`,
+`${process.env.PUBLIC_URL}/images/photography/city_rain.jpg`,
+`${process.env.PUBLIC_URL}/images/photography/mountain_fog.jpg`,
+`${process.env.PUBLIC_URL}/images/photography/oak_creek.jpg`,
+];
+
+
+export default function Photography() {
+const [active, setActive] = useState(null);
+
+
+const close = useCallback(() => setActive(null), []);
 const open = useCallback((idx) => setActive(idx), []);
 
 
