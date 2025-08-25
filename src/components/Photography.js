@@ -1,13 +1,7 @@
-// src/pages/Photography.js
-export default function Photography() {
-const [active, setActive] = useState(null); // index of selected photo
-
-
-const close = useCallback(() => setActive(null), []);
+import React, { useState, useCallback, useEffect } from 'react';
 const open = useCallback((idx) => setActive(idx), []);
 
 
-// Close on ESC
 useEffect(() => {
 function onKey(e) {
 if (e.key === 'Escape') close();
@@ -22,18 +16,18 @@ return () => window.removeEventListener('keydown', onKey);
 
 
 return (
-<section className="section">
-<h2 style={{ fontSize: '2.5rem' }}>Photography</h2>
-<p style={{ maxWidth: 820, margin: '0 auto 1.25rem', color: 'var(--color-light-gray-blue, #dce8f2)' }}>
+<section className="pg-section">
+<h2 className="pg-title">Photography</h2>
+<p className="pg-intro">
 A curated selection of moments from my travels and fieldwork. Click any image to view full screen.
 </p>
 
 
-<div className="photo-grid" aria-label="Photo grid">
+<div className="pg-grid" aria-label="Photo grid">
 {photos.map((src, i) => (
 <button
 key={src}
-className="photo-tile"
+className="pg-tile"
 onClick={() => open(i)}
 aria-label={`Open photo ${i + 1}`}
 >
@@ -44,23 +38,23 @@ aria-label={`Open photo ${i + 1}`}
 
 
 {active !== null && (
-<div className="lightbox" role="dialog" aria-modal="true" onClick={close}>
-<button className="lightbox-close" aria-label="Close" onClick={close}>×</button>
+<div className="pg-lightbox" role="dialog" aria-modal="true" onClick={close}>
+<button className="pg-close" aria-label="Close" onClick={close}>×</button>
 <button
-className="lightbox-nav prev"
+className="pg-nav pg-prev"
 onClick={(e) => { e.stopPropagation(); setActive((i) => Math.max(0, i - 1)); }}
 aria-label="Previous"
 >
 ‹
 </button>
 <img
-className="lightbox-image"
+className="pg-image"
 src={photos[active]}
 alt={`Photo ${active + 1} of ${photos.length}`}
 onClick={(e) => e.stopPropagation()}
 />
 <button
-className="lightbox-nav next"
+className="pg-nav pg-next"
 onClick={(e) => { e.stopPropagation(); setActive((i) => Math.min(photos.length - 1, i + 1)); }}
 aria-label="Next"
 >
