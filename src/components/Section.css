@@ -175,6 +175,73 @@
   box-shadow: 0 4px 12px rgba(91, 192, 255, 0.2);
 }
 
+.photo-grid {
+}
+
+
+/* Fullscreen lightbox */
+.lightbox {
+position: fixed;
+inset: 0;
+background: rgba(0,0,0,0.92);
+display: grid;
+place-items: center;
+z-index: 1000;
+}
+
+
+.lightbox-image {
+max-width: 92vw;
+max-height: 86vh;
+border-radius: 12px;
+box-shadow: 0 12px 36px rgba(0,0,0,0.6);
+}
+
+
+.lightbox-close {
+position: fixed;
+top: 1rem;
+right: 1rem;
+font-size: 2rem;
+line-height: 1;
+color: #dce8f2;
+background: transparent;
+border: none;
+cursor: pointer;
+}
+
+
+.lightbox-nav {
+position: fixed;
+top: 50%;
+transform: translateY(-50%);
+font-size: 3rem;
+line-height: 1;
+color: #dce8f2;
+background: rgba(28,28,46,0.6);
+border: none;
+border-radius: 999px;
+width: 3rem;
+height: 3rem;
+display: grid;
+place-items: center;
+cursor: pointer;
+}
+
+
+.lightbox-nav.prev { left: 1rem; }
+.lightbox-nav.next { right: 1rem; }
+
+
+@media (max-width: 900px) {
+.photo-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+@media (max-width: 600px) {
+.photo-grid { grid-template-columns: 1fr; }
+}
+
 @keyframes fadeInUp {
   from {
     transform: translateY(40px);
