@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Research from './components/Research';
 import Updates from './components/Updates';
+import Photography from './components/Photography';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/research" element={<Research />} />
           <Route path="/updates" element={<Updates />} />
+          <Route path="/photography" element={<Photography />} />
         </Routes>
         <Footer />
       </div>

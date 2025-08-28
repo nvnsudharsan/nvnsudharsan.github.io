@@ -189,6 +189,28 @@
   0%, 100% { border-color: #5bc0ff; }
   50% { border-color: transparent; }
 }
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #8a2be2, #5bc0ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(138, 43, 226, 0.3);
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(91, 192, 255, 0.4);
+  background: linear-gradient(135deg, #9a3cf2, #6bd0ff);
+  color: white;
+  text-decoration: none;
+}
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);

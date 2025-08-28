@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Section.css';
 
 const videos = [
@@ -87,6 +88,17 @@ function Home() {
         <p>
           I am interested in: <span className="typed-keyword">{typedText}</span>
         </p>
+      </section>
+
+      <section className="section">
+        <h2>Photography</h2>
+        <p>
+          Beyond research, I capture moments from my travels and fieldwork through photography. 
+          Explore a curated collection of landscapes, cityscapes, and natural wonders.
+        </p>
+        <Link to="/photography" className="cta-button">
+          View Photography Gallery
+        </Link>
       </section>
 
     </div>
