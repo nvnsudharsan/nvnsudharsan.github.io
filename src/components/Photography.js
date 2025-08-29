@@ -256,23 +256,24 @@ return (
       </div>
     </button>
   ))}
-</div>
 
-{visibleCount < photos.length && (
-  <div className="pg-show-more">
-    <button 
-      className="pg-show-more-btn" 
-      onClick={showMore}
-      aria-label="Show more photos"
-    >
-      <span>Show More</span>
-      <svg className="pg-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M7 13l5 5 5-5"/>
-        <path d="M7 6l5 5 5-5"/>
-      </svg>
-    </button>
-  </div>
-)}
+  {visibleCount < photos.length && (
+    <div className="pg-show-more">
+      <button 
+        className="pg-show-more-btn" 
+        onClick={showMore}
+        aria-label="Show more photos"
+        title="Show more"
+      >
+        <span>Show More</span>
+        <svg className="pg-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M7 13l5 5 5-5"/>
+          <path d="M7 6l5 5 5-5"/>
+        </svg>
+      </button>
+    </div>
+  )}
+</div>
 
 
 {active !== null && (
