@@ -90,17 +90,6 @@ function Home() {
         </p>
       </section>
 
-      <section className="section">
-        <h2>Photography</h2>
-        <p>
-          Beyond research, I capture moments from my travels and fieldwork through photography. 
-          Explore a curated collection of landscapes, cityscapes, and natural wonders.
-        </p>
-        <Link to="/photography" className="cta-button">
-          View Photography Gallery
-        </Link>
-      </section>
-
     </div>
   );
 }
