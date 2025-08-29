@@ -76,6 +76,42 @@ const photos = [
     }
   },
   {
+    src: `${process.env.PUBLIC_URL}/Photography/Arya.jpg`,
+    title: 'Portrait1',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Sony 50mm f/1.8',
+      settings: 'f/1.8, 1/1000s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure +0.61, Contrast +29, Highlights -85, Shadows +36, Whites -23, Blacks -24, Saturation 0, Texture +11, Clarity 0, Dehaze +9'
+    }
+  },
+  {
+    src: `${process.env.PUBLIC_URL}/Photography/Keerthi.jpg`,
+    title: 'Portrait2',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/3.5, 1/500s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure -0.59, Contrast 0, Highlights -100, Shadows +15, Whites -25, Blacks +20, Saturation 0, Texture +15, Clarity +11, Dehaze +27'
+    }
+  },
+  {
+    src: `${process.env.PUBLIC_URL}/Photography/Adhu.jpg`,
+    title: 'Portrait3',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/1.7, 1/1000s, ISO 400'
+    },
+    editing: {
+      adjustments: 'Exposure -0.51, Contrast -12, Highlights -24, Shadows +29, Whites -37, Blacks -16, Saturation +9, Texture +13, Clarity +10, Dehaze +3'
+    }
+  },
+  {
     src: `${process.env.PUBLIC_URL}/Photography/Cactus.jpg`,
     title: 'Cactus',
     camera: {
@@ -92,14 +128,38 @@ const photos = [
 
 export default function Photography() {
   const [active, setActive] = useState(null);
-  const [visibleCount, setVisibleCount] = useState(10); // Show first 10 photos initially
+  const [visibleCount, setVisibleCount] = useState(8); // Show first 8 photos initially for faster loading
+  const [loadedImages, setLoadedImages] = useState(new Set());
+  const [isInitialLoading, setIsInitialLoading] = useState(false); // Start with false to show content immediately
 
   const close = useCallback(() => setActive(null), []);
   const open = useCallback((idx) => setActive(idx), []);
 
   const showMore = useCallback(() => {
-    setVisibleCount(prev => Math.min(prev + 10, photos.length));
+    setVisibleCount(prev => Math.min(prev + 8, photos.length));
   }, []);
+
+  const handleImageLoad = useCallback((src) => {
+    setLoadedImages(prev => {
+      const newSet = new Set([...prev, src]);
+      return newSet;
+    });
+  }, []);
+
+  // Preload next batch of images
+  useEffect(() => {
+    const preloadImages = () => {
+      const nextBatch = photos.slice(visibleCount, visibleCount + 8);
+      nextBatch.forEach(photo => {
+        const img = new Image();
+        img.src = photo.src;
+      });
+    };
+    
+    if (visibleCount < photos.length) {
+      preloadImages();
+    }
+  }, [visibleCount]);
 
   useEffect(() => {
     function onKey(e) {
@@ -117,9 +177,15 @@ export default function Photography() {
 return (
 <section className="pg-section">
 <h2 className="pg-title">Photography</h2>
-<p className="pg-intro">
+<p className="pg-intro">Click on the photo to see in full size
 </p>
 
+{isInitialLoading && (
+  <div className="pg-initial-loading">
+    <div className="pg-loading-spinner"></div>
+    <p>Loading photos...</p>
+  </div>
+)}
 
 <div className="pg-grid" aria-label="Photo grid">
   {photos.slice(0, visibleCount).map((photo, i) => (
@@ -129,7 +195,21 @@ return (
       onClick={() => open(i)}
       aria-label={`Open photo ${i + 1}: ${photo.title}`}
     >
-      <img loading="lazy" src={photo.src} alt={photo.title} />
+      <img 
+        loading="lazy" 
+        src={photo.src} 
+        alt={photo.title}
+        onLoad={() => handleImageLoad(photo.src)}
+        style={{ 
+          opacity: loadedImages.has(photo.src) ? 1 : 0,
+          transition: 'opacity 0.3s ease'
+        }}
+      />
+      {!loadedImages.has(photo.src) && (
+        <div className="pg-loading-placeholder">
+          <div className="pg-loading-spinner"></div>
+        </div>
+      )}
       <div className="pg-tile-overlay">
         <span className="pg-tile-title">{photo.title}</span>
       </div>
@@ -157,6 +237,7 @@ return (
 {active !== null && (
 <div className="pg-lightbox" role="dialog" aria-modal="true" onClick={close}>
 <button className="pg-close" aria-label="Close" onClick={close}>×</button>
+{active > 0 && (
 <button
 className="pg-nav pg-prev"
 onClick={(e) => { e.stopPropagation(); setActive((i) => Math.max(0, i - 1)); }}
@@ -164,6 +245,7 @@ aria-label="Previous"
 >
 ‹
 </button>
+)}
 <div className="pg-lightbox-content">
   <img
     className="pg-image"
@@ -196,6 +278,7 @@ aria-label="Previous"
     </div>
   </div>
 </div>
+{active < photos.length - 1 && (
 <button
 className="pg-nav pg-next"
 onClick={(e) => { e.stopPropagation(); setActive((i) => Math.min(photos.length - 1, i + 1)); }}
@@ -203,6 +286,7 @@ aria-label="Next"
 >
 ›
 </button>
+)}
 </div>
 )}
 </section>
