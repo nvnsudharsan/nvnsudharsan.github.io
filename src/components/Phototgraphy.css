@@ -4,6 +4,10 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .pg-title { 
@@ -56,6 +60,16 @@
   display: block; 
   transition: transform 0.15s ease, opacity 0.3s ease; 
   will-change: transform, opacity;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
 }
 
 .pg-loading-placeholder {
@@ -120,6 +134,8 @@
   transition: opacity 0.15s ease;
   will-change: opacity;
 }
+
+
 
 .pg-tile:hover .pg-tile-overlay {
   opacity: 1;
@@ -209,6 +225,16 @@
   object-fit: contain;
   width: auto;
   height: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
 }
 .pg-close { 
   position: fixed; 

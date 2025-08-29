@@ -163,14 +163,51 @@ export default function Photography() {
 
   useEffect(() => {
     function onKey(e) {
+      // Prevent common screenshot shortcuts
+      if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'p' || e.key === 'u')) {
+        e.preventDefault();
+        return;
+      }
+      
+      // Prevent F12 and other dev tools
+      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+        e.preventDefault();
+        return;
+      }
+      
       if (e.key === 'Escape') close();
       if (active !== null) {
         if (e.key === 'ArrowRight') setActive((i) => Math.min(photos.length - 1, i + 1));
         if (e.key === 'ArrowLeft') setActive((i) => Math.max(0, i - 1));
       }
     }
+    
+    // Prevent right-click context menu
+    function onContextMenu(e) {
+      e.preventDefault();
+    }
+    
+    // Prevent drag and drop
+    function onDragStart(e) {
+      e.preventDefault();
+    }
+    
+    // Prevent selection
+    function onSelectStart(e) {
+      e.preventDefault();
+    }
+    
     window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
+    document.addEventListener('contextmenu', onContextMenu);
+    document.addEventListener('dragstart', onDragStart);
+    document.addEventListener('selectstart', onSelectStart);
+    
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      document.removeEventListener('contextmenu', onContextMenu);
+      document.removeEventListener('dragstart', onDragStart);
+      document.removeEventListener('selectstart', onSelectStart);
+    };
   }, [active, close]);
 
 
@@ -200,9 +237,13 @@ return (
         src={photo.src} 
         alt={photo.title}
         onLoad={() => handleImageLoad(photo.src)}
+        onContextMenu={(e) => e.preventDefault()}
+        onDragStart={(e) => e.preventDefault()}
         style={{ 
           opacity: loadedImages.has(photo.src) ? 1 : 0,
-          transition: 'opacity 0.3s ease'
+          transition: 'opacity 0.3s ease',
+          userSelect: 'none',
+          pointerEvents: 'auto'
         }}
       />
       {!loadedImages.has(photo.src) && (
@@ -252,6 +293,9 @@ aria-label="Previous"
     src={photos[active].src}
     alt={`Photo ${active + 1} of ${photos.length}: ${photos[active].title}`}
     onClick={(e) => e.stopPropagation()}
+    onContextMenu={(e) => e.preventDefault()}
+    onDragStart={(e) => e.preventDefault()}
+    style={{ userSelect: 'none' }}
   />
   <div className="pg-photo-info">
     <div className="pg-info-section">
