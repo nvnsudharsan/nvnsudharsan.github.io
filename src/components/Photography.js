@@ -173,7 +173,7 @@ export default function Photography() {
   // Preload next batch of images
   useEffect(() => {
     const preloadImages = () => {
-      const nextBatch = photos.slice(visibleCount, visibleCount + 8);
+      const nextBatch = photos.slice(visibleCount, visibleCount + 10);
       nextBatch.forEach(photo => {
         const img = new Image();
         img.src = photo.src;
