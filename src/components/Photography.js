@@ -122,6 +122,30 @@ const photos = [
     editing: {
       adjustments: 'Exposure +0.50, Contrast +86, Highlights -80, Shadows -15, Whites +42, Blacks -13, Saturation +19, Texture +18, Clarity +16, Dehaze +25'
     }
+  },
+    {
+    src: `${process.env.PUBLIC_URL}/Photography/Koorosh.jpg`,
+    title: 'Portrait3',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/2, 1/3000s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure +0.50, Contrast +86, Highlights -80, Shadows -15, Whites +42, Blacks -13, Saturation +19, Texture +18, Clarity +16, Dehaze +25'
+    }
+  },
+    {
+    src: `${process.env.PUBLIC_URL}/Photography/Keerthi2.jpg`,
+    title: 'Portrait4',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/2, 1/3000s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure +0.50, Contrast +86, Highlights -80, Shadows -15, Whites +42, Blacks -13, Saturation +19, Texture +18, Clarity +16, Dehaze +25'
+    }
   }
 ];
 
