@@ -152,7 +152,7 @@ const photos = [
 
 export default function Photography() {
   const [active, setActive] = useState(null);
-  const [visibleCount, setVisibleCount] = useState(8); // Show first 8 photos initially for faster loading
+  const [visibleCount, setVisibleCount] = useState(10); // Show first 8 photos initially for faster loading
   const [loadedImages, setLoadedImages] = useState(new Set());
   const [isInitialLoading, setIsInitialLoading] = useState(false); // Start with false to show content immediately
 
@@ -173,7 +173,7 @@ export default function Photography() {
   // Preload next batch of images
   useEffect(() => {
     const preloadImages = () => {
-      const nextBatch = photos.slice(visibleCount, visibleCount + 10);
+      const nextBatch = photos.slice(visibleCount, visibleCount + 8);
       nextBatch.forEach(photo => {
         const img = new Image();
         img.src = photo.src;
