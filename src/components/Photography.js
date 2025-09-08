@@ -129,7 +129,7 @@ const photos = [
     camera: {
       camera: 'Sony A6400',
       lens: 'Viltrox 25mm f/1.7',
-      settings: 'f/2, 1/3000s, ISO 100'
+      settings: 'f/1.7, 1/90s, ISO 400'
     },
     editing: {
       adjustments: 'Exposure +0.50, Contrast +86, Highlights -80, Shadows -15, Whites +42, Blacks -13, Saturation +19, Texture +18, Clarity +16, Dehaze +25'
@@ -141,7 +141,7 @@ const photos = [
     camera: {
       camera: 'Sony A6400',
       lens: 'Viltrox 25mm f/1.7',
-      settings: 'f/2, 1/3000s, ISO 100'
+      settings: 'f/5.6, 1/125s, ISO 100'
     },
     editing: {
       adjustments: 'Exposure +0.50, Contrast +86, Highlights -80, Shadows -15, Whites +42, Blacks -13, Saturation +19, Texture +18, Clarity +16, Dehaze +25'
