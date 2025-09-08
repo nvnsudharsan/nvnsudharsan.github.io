@@ -136,7 +136,7 @@ const photos = [
     }
   },
     {
-    src: `${process.env.PUBLIC_URL}/Photography/Keerthi2.jpg`,
+    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
     title: 'Portrait4',
     camera: {
       camera: 'Sony A6400',
