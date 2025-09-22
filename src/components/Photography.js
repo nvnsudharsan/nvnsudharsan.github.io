@@ -132,7 +132,7 @@ const photos = [
       settings: 'f/1.7, 1/90s, ISO 400'
     },
     editing: {
-      adjustments: 'Exposure +0.50, Contrast +86, Highlights -80, Shadows -15, Whites +42, Blacks -13, Saturation +19, Texture +18, Clarity +16, Dehaze +25'
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
     }
   },
     {
@@ -144,7 +144,7 @@ const photos = [
       settings: 'f/5.6, 1/125s, ISO 100'
     },
     editing: {
-      adjustments: 'Exposure +0.50, Contrast +86, Highlights -80, Shadows -15, Whites +42, Blacks -13, Saturation +19, Texture +18, Clarity +16, Dehaze +25'
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
     }
   }
 ];
