@@ -160,7 +160,7 @@ export default function Photography() {
   const open = useCallback((idx) => setActive(idx), []);
 
   const showMore = useCallback(() => {
-    setVisibleCount(prev => Math.min(prev + 8, photos.length));
+    setVisibleCount(prev => Math.min(prev + 12, photos.length));
   }, []);
 
   const handleImageLoad = useCallback((src) => {
