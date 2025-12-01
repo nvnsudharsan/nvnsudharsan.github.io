@@ -136,6 +136,18 @@ const photos = [
     }
   },
     {
+    src: `${process.env.PUBLIC_URL}/Photography/Chicago_overcast.jpg`,
+    title: 'Chicago Overcast',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/2.4, 1/125s, ISO 1600'
+    },
+    editing: {
+      adjustments: 'Exposure -0.27, Contrast +45, Highlights +39, Shadows +49, Whites +25, Blacks -49, Saturation +25, Texture +100, Clarity +62, Dehaze +46'
+    }
+  },
+    {
     src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
     title: 'Portrait4',
     camera: {
