@@ -60,11 +60,10 @@ function About() {
             <li><a href="https://www.utcitycolab.org/" target="_blank" rel="noopener noreferrer"><strong>UT City Colab</strong></a></li>
             <li><a href="https://homepages.iitb.ac.in/~skarmakar/" target="_blank" rel="noopener noreferrer"><strong>ESRL</strong></a></li>
           </ul>
-          <h3>GitHub Stats</h3>
+          <h3></h3>
           <div className="github-stats-row">
             <img
-            src="https://github-readme-stats.vercel.app/api?username=nvnsudharsan&theme=github_dark&show_icons=true&hide_border=true"
-            alt="Naveen's GitHub Stats"
+            <img src="https://algora.io/og/user/nvnsudharsan" />
             />
           </div>
         </div>
