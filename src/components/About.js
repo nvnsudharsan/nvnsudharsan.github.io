@@ -63,7 +63,7 @@ function About() {
           <h3></h3>
           <div className="github-stats-row">
             <img
-            <img src="https://algora.io/og/user/nvnsudharsan" />
+            <img src="https://github-readme-stats.vercel.app/api?username=nvnsudharsan&theme=github_dark&show_icons=true&hide_border=false" />
             />
           </div>
         </div>
