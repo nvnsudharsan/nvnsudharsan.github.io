@@ -3,12 +3,17 @@ import './Section.css';
 
 const updates = [
   {
+    title: 'Chairing and presenting at AMS Annual Meeting 2026',
+    date: 'Jan 26 - 29, 2026',
+    link: 'https://annual.ametsoc.org/2026/'
+  },
+  {
     title: 'Organizing a workshop on land surface modeling: Advancing Land Modeling for Gulf Coast Resilience at UT Austin',
     date: 'Aug 14 - 15, 2025',
     link: 'https://landmodelling.github.io/'
   },
   {
-    title: 'Attending Atmospheric Urban Digital Twin organised by UT Austin',
+    title: 'Attending the Atmospheric Urban Digital Twin organised by UT Austin',
     date: 'Aug 7 - 8, 2025',
 
   },
