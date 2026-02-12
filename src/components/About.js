@@ -63,7 +63,9 @@ function About() {
           <h3></h3>
           <div className="github-stats-row">
             <img
-            <img src="https://github-readme-stats.vercel.app/api?username=nvnsudharsan&theme=github_dark&show_icons=true&hide_border=false" />
+            src="https://github-readme-stats.vercel.app/api?username=nvnsudharsan&theme=github_dark&show_icons=true&hide_border=false"
+            alt="GitHub stats"
+            loading="lazy"
             />
           </div>
         </div>
