@@ -158,6 +158,18 @@ const photos = [
     editing: {
       adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
     }
+  },
+    {
+    src: `${process.env.PUBLIC_URL}/Photography/milkyway.jpg`,
+    title: 'Milkyway',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Sony 24-70mm',
+      settings: 'f/2.8, bulb, ISO 3200'
+    },
+    editing: {
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    }
   }
 ];
 
