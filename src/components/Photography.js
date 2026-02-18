@@ -131,13 +131,13 @@ const photos = [
       lens: 'Viltrox 25mm f/1.7',
       settings: 'f/1.7, 1/90s, ISO 400'
     },
-    editing: {
-      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
-    }
+    //editing: {
+     // adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+   // }
   },
     {
     src: `${process.env.PUBLIC_URL}/Photography/20251125-_NAV7298-HDR.jpg`,
-    title: 'Chicago Overcast',
+    title: 'Milkyway BigBend',
     camera: {
       camera: 'Sony A6400',
       lens: 'Sony 24-50mm f/2.8',
@@ -155,9 +155,9 @@ const photos = [
       lens: 'Viltrox 25mm f/1.7',
       settings: 'f/5.6, 1/125s, ISO 100'
     },
-    editing: {
-      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
-    }
+    //editing: {
+    //  adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+   // }
   },
     {
     src: `${process.env.PUBLIC_URL}/Photography/milkyway.jpg`,
@@ -167,9 +167,9 @@ const photos = [
       lens: 'Sony 24-70mm',
       settings: 'f/2.8, bulb, ISO 3200'
     },
-    editing: {
-      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
-    }
+    //editing: {
+    //  adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    //}
   }
 ];
 
