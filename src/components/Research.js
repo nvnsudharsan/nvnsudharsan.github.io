@@ -62,7 +62,13 @@ const projects = [
     title: 'Evaluating the importance of land surface model in predicitng hurricane track',
     description: 'We evaluated the changes in tracks due to soil moisture using HWRF and emphasised the importance of have LSM in AI models to predict and explain the tracks at higher accuracy.',
     image: `${process.env.PUBLIC_URL}/images/hurricane.png`,
-    link: 'https://austincoolpavement.streamlit.app/'
+    link: ''
+  },
+  {
+    title: 'AORC Precipitation Portal',
+    description: 'A web app to download AORC data for any zip code over the USA.',
+    image: `${process.env.PUBLIC_URL}/images/hurricane.png`,
+    link: 'https://web-production-95860.up.railway.app/'
   },
 ];
 
