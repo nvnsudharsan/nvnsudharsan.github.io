@@ -67,7 +67,7 @@ const projects = [
   {
     title: 'AORC Precipitation Portal',
     description: 'A web app to download AORC data for any zip code over the USA.',
-    image: `${process.env.PUBLIC_URL}/images/hurricane.png`,
+    image: `${process.env.PUBLIC_URL}/images/aorc_portal.png`,
     link: 'https://web-production-95860.up.railway.app/'
   },
 ];
