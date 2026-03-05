@@ -59,7 +59,7 @@ const projects = [
     link: 'https://austincoolpavement.streamlit.app/'
   },
   {
-    title: 'Evaluating the importance of land surface model in predicitng hurricane track',
+    title: 'Evaluating the importance of land surface in predicitng hurricane track',
     description: 'We evaluated the changes in tracks due to soil moisture using HWRF and emphasised the importance of have LSM in AI models to predict and explain the tracks at higher accuracy.',
     image: `${process.env.PUBLIC_URL}/images/hurricane.png`,
     link: ''
