@@ -83,17 +83,24 @@ function Research() {
     <section className="section">
       <h2 style={{ fontSize: '2.5rem' }}>Research</h2>
       <div className="grid">
-        {projects.map((project, index) => (
-          <Link to={project.link} className="tile" key={index}>
-            <div className="tile-image">
-              <img src={project.image} alt={project.title} />
-            </div>
-            <div className="tile-content">
-              <h2 style={{ fontSize: '1.5rem' }}>{project.title}</h2>
-              <p>{project.description}</p>
-            </div>
-          </Link>
-        ))}
+        {projects.map((project, index) => {
+          const isExternal = project.link.startsWith('http') || project.link.endsWith('.html');
+          const Wrapper = isExternal
+            ? (props) => <a href={project.link} target="_blank" rel="noopener noreferrer" className="tile" {...props} />
+            : (props) => <Link to={project.link} className="tile" {...props} />;
+
+          return (
+            <Wrapper key={index}>
+              <div className="tile-image">
+                <img src={project.image} alt={project.title} />
+              </div>
+              <div className="tile-content">
+                <h2 style={{ fontSize: '1.5rem' }}>{project.title}</h2>
+                <p>{project.description}</p>
+              </div>
+            </Wrapper>
+          );
+        })}
       </div>
     </section>
   );
