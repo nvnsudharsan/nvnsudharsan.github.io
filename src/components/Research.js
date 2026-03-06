@@ -70,7 +70,6 @@ const projects = [
     image: `${process.env.PUBLIC_URL}/images/aorc_portal.png`,
     link: 'https://web-production-95860.up.railway.app/'
   },
-  public/usa_stations_map_download.html
   {
     title: 'USA Weather Stations Analysis',
     description: 'This app shows the weather stations maintained by GHCN-Daily, and shows the data availability along with an option to download it.',
