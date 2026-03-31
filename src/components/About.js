@@ -9,7 +9,7 @@ function About() {
         <h2>About Me</h2>
         <div className="resume-style">
           <p>
-            I’m Dr. Naveen Sudharsan, a Postdoctoral Fellow at the University of Texas at Austin, working at the intersection of extreme weather, climate risk, and artificial intelligence. My research focuses on developing innovative tools to improve short-term weather forecasts and long-term risk assessments for hazards like heatwaves, hurricanes, and compound flooding.
+            I’m Naveen Sudharsan, a Research Scientist Associate at the Bureau of Economic Geology in the University of Texas at Austin, working at the intersection of extreme weather, climate risk, and artificial intelligence. My research focuses on developing innovative tools to improve short-term weather forecasts and long-term risk assessments for hazards like heatwaves, hurricanes, and compound flooding.
           </p>
 
           <p>
@@ -33,7 +33,8 @@ function About() {
 
           <h3>Experience</h3>
           <ul>
-            <li><strong>Postdoctoral Fellow</strong>, <a href="https://www.utexas.edu/" target="_blank" rel="noopener noreferrer">The University of Texas at Austin</a>, Jan 2023 to Present</li>
+            <li><strong>Research Scientist Associate III</strong>, <a href="https://www.beg.utexas.edu/" target="_blank" rel="noopener noreferrer">Bureau of Economic Geology, The University of Texas at Austin</a>, March 2026 to Present</li>
+            <li><strong>Postdoctoral Fellow</strong>, <a href="https://www.utexas.edu/" target="_blank" rel="noopener noreferrer">The University of Texas at Austin</a>, Jan 2023 to March 2026</li>
             <li><strong>Research Associate</strong>, <a href="https://www.iitb.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology Bombay</a>, Jul 2022 to Nov 2022</li>
             <li><strong>Teaching Assistant</strong>, <a href="https://www.iitb.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology Bombay</a>, Jan 2018 to Jul 2022</li>
             <li><strong>Assistant Professor</strong>, <a href="https://scmsgroup.org/sset/" target="_blank" rel="noopener noreferrer">SCMS School of Engineering and Technology</a>, Jul 2017 to Dec 2017</li>
