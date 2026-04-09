@@ -71,6 +71,12 @@ const projects = [
     link: 'https://web-production-95860.up.railway.app/'
   },
   {
+    title: 'AORCviz',
+    description: 'A web app to download AORC data for any bounding box, use for all variables available, and can overlay up to 3 variables.',
+    image: `${process.env.PUBLIC_URL}/images/AORCviz.png`,
+    link: 'https://web-production-a6442.up.railway.app/'
+  },
+  {
     title: 'USA Weather Stations Analysis',
     description: 'This app shows the weather stations maintained by GHCN-Daily, and shows the data availability along with an option to download it.',
     image: `${process.env.PUBLIC_URL}/images/ghcnd.png`,
