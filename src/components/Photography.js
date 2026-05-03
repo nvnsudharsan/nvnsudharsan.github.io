@@ -160,7 +160,7 @@ const photos = [
     }
   },
     {
-    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    src: `${process.env.PUBLIC_URL}/Photography/Brenda.jpg`,
     title: 'Portrait4',
     camera: {
       camera: 'Sony A6400',
@@ -172,7 +172,7 @@ const photos = [
     }
   },
   {
-    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    src: `${process.env.PUBLIC_URL}/Photography/Adu_1.jpg`,
     title: 'Portrait4',
     camera: {
       camera: 'Sony A6400',
@@ -184,7 +184,7 @@ const photos = [
     }
   },
   {
-    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    src: `${process.env.PUBLIC_URL}/Photography/Brenda_1.jpg`,
     title: 'Portrait4',
     camera: {
       camera: 'Sony A6400',
@@ -196,7 +196,7 @@ const photos = [
     }
   },
   {
-    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    src: `${process.env.PUBLIC_URL}/Photography/Brenda_2.jpg`,
     title: 'Portrait4',
     camera: {
       camera: 'Sony A6400',
@@ -208,7 +208,7 @@ const photos = [
     }
   },
   {
-    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    src: `${process.env.PUBLIC_URL}/Photography/Brenda_Hari.jpg`,
     title: 'Portrait4',
     camera: {
       camera: 'Sony A6400',
@@ -220,7 +220,31 @@ const photos = [
     }
   },
   {
-    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    src: `${process.env.PUBLIC_URL}/Photography/Adu_2.jpg`,
+    title: 'Portrait4',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/5.6, 1/125s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    }
+  },
+  {
+    src: `${process.env.PUBLIC_URL}/Photography/Group_photo.jpg`,
+    title: 'Portrait4',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/5.6, 1/125s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    }
+  },
+  {
+    src: `${process.env.PUBLIC_URL}/Photography/Santa_Elena_Canyon.jpg`,
     title: 'Portrait4',
     camera: {
       camera: 'Sony A6400',
