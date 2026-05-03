@@ -160,6 +160,78 @@ const photos = [
     }
   },
     {
+    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    title: 'Portrait4',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/5.6, 1/125s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    }
+  },
+  {
+    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    title: 'Portrait4',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/5.6, 1/125s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    }
+  },
+  {
+    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    title: 'Portrait4',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/5.6, 1/125s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    }
+  },
+  {
+    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    title: 'Portrait4',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/5.6, 1/125s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    }
+  },
+  {
+    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    title: 'Portrait4',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/5.6, 1/125s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    }
+  },
+  {
+    src: `${process.env.PUBLIC_URL}/Photography/Keerthi_1.jpg`,
+    title: 'Portrait4',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Viltrox 25mm f/1.7',
+      settings: 'f/5.6, 1/125s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    }
+  },
+    {
     src: `${process.env.PUBLIC_URL}/Photography/milkyway.jpg`,
     title: 'Milkyway',
     camera: {
