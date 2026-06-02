@@ -74,7 +74,7 @@ const projects = [
     title: 'AORCviz',
     description: 'A web app to download AORC data for any bounding box, use for all variables available, and can overlay up to 3 variables.',
     image: `${process.env.PUBLIC_URL}/images/AORCviz.png`,
-    link: 'https://www.aorcviz.com/'
+    link: 'https://aorcviz.com/'
   },
   {
     title: 'USA Weather Stations Analysis',
