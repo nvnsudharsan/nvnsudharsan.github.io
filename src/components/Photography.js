@@ -256,12 +256,12 @@ const photos = [
     }
   },
     {
-    src: `${process.env.PUBLIC_URL}/Photography/milkyway.jpg`,
-    title: 'Milkyway',
+    src: `${process.env.PUBLIC_URL}/Photography/Mount_Blue_Sky.jpg`,
+    title: 'Mount Blue Sky',
     camera: {
       camera: 'Sony A6400',
-      lens: 'Sony 24-70mm',
-      settings: 'f/2.8, bulb, ISO 3200'
+      lens: 'Sigma 10-18mm',
+      settings: 'f/2.8, 1/2000, ISO 100'
     },
     editing: {
       adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
