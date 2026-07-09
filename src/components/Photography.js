@@ -245,11 +245,11 @@ const photos = [
   },
   {
     src: `${process.env.PUBLIC_URL}/Photography/Santa_Elena_Canyon.jpg`,
-    title: 'Portrait4',
+    title: 'Santa Elena Canyon',
     camera: {
       camera: 'Sony A6400',
-      lens: 'Viltrox 25mm f/1.7',
-      settings: 'f/5.6, 1/125s, ISO 100'
+      lens: 'Sigma 24-70mm f/2.8',
+      settings: 'f/2.8, 1/60s, ISO 100'
     },
     editing: {
       adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
