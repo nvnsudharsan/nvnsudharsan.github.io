@@ -256,6 +256,18 @@ const photos = [
     }
   },
     {
+    src: `${process.env.PUBLIC_URL}/Photography/Roadrunner.jpg`,
+    title: 'Roadrunner',
+    camera: {
+      camera: 'Sony A6400',
+      lens: 'Sony 100-400mm f/4.5-5.6',
+      settings: 'f/5.6, 1/750s, ISO 100'
+    },
+    editing: {
+      adjustments: 'Exposure , Contrast , Highlights , Shadows , Whites , Blacks , Saturation , Texture , Clarity , Dehaze '
+    }
+  },
+    {
     src: `${process.env.PUBLIC_URL}/Photography/Mount_Blue_Sky.jpg`,
     title: 'Mount Blue Sky',
     camera: {
