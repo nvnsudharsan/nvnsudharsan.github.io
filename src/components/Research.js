@@ -11,6 +11,12 @@ const projects = [
     link: 'https://github.com/nvnsudharsan/SOLWEIG-GPU'
   },
   {
+    title: 'Cool Path LA: Shade-Aware Walking Routes',
+    description: 'Finds the coolest and shadiest walking route through central Los Angeles on a heat-wave day, hour by hour, using SOLWEIG-GPU heat and shade fields.',
+    image: `${process.env.PUBLIC_URL}/images/coolpath.jpg`,
+    link: `${process.env.PUBLIC_URL}/coolpath/index.html`
+  },
+  {
     title: 'Comparison of AI and Physics-based models for Hurricane Track Prediction',
     description: 'Compare different AI models for the track predictions in the Gulf Coast',
     image: `${process.env.PUBLIC_URL}/images/hurricane_AI.gif`,
@@ -71,7 +77,7 @@ const projects = [
     link: 'https://web-production-95860.up.railway.app/'
   },
   {
-    title: 'AORCviz',
+    title: 'MetLens',
     description: 'A web app to download AORC data for any bounding box, use for all variables available, and can overlay up to 3 variables.',
     image: `${process.env.PUBLIC_URL}/images/AORCviz.png`,
     link: 'https://aorcviz.com/'

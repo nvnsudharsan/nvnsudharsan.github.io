@@ -1,8 +1,13 @@
 import React from 'react';
 import './Section.css';
+import { useTheme } from '../ThemeContext';
 import profilePic from '../assets/Naveen2.jpeg'; 
 
+const STATS_LIGHT = 'bg_color=F1F5F9&title_color=0284C7&text_color=0F172A&icon_color=F97316&border_color=E2E8F0';
+const STATS_DARK = 'bg_color=1E293B&title_color=38BDF8&text_color=E2E8F0&icon_color=F97316&border_color=334155';
+
 function About() {
+  const { theme } = useTheme();
   return (
     <section className="about-section">
       <div className="about-text">
@@ -64,7 +69,7 @@ function About() {
           <h3></h3>
           <div className="github-stats-row">
             <img
-            src="https://github-readme-stats-gamma-dun-41.vercel.app/api?username=nvnsudharsan&theme=github_dark&show_icons=true&hide_border=false"
+            src={`https://github-readme-stats-gamma-dun-41.vercel.app/api?username=nvnsudharsan&show_icons=true&hide_border=false&${theme === 'dark' ? STATS_DARK : STATS_LIGHT}`}
             alt="GitHub stats"
             loading="lazy"
             />

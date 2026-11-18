@@ -1,6 +1,7 @@
 .footer {
-  background-color: #1a1a2e;
-  color: #dce8f2;
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
   text-align: center;
   padding: clamp(0.75rem, 2vw, 1.5rem);
   font-size: clamp(0.8rem, 1.5vw, 1rem);
@@ -19,14 +20,14 @@
 }
 
 .footer-icons a {
-  color: #5bc0ff;
+  color: var(--color-primary);
   font-size: clamp(1rem, 2vw, 1.4rem);
   transition: color 0.3s ease;
   text-decoration: none;
 }
 
 .footer-icons a:hover {
-  color: #8a2be2;
+  color: var(--color-accent);
 }
 
 @media (max-width: 400px) {

@@ -1,8 +1,47 @@
+/* Site palette: change colors here and they update everywhere */
+:root {
+  --color-bg: #F8FAFC;        /* Cloud White: page background */
+  --color-surface: #F1F5F9;   /* Mist Grey: cards, code blocks, abstracts */
+  --color-text: #0F172A;      /* Deep Troposphere: body text and headings */
+  --color-primary: #0284C7;   /* Stratosphere Blue: nav links, section headers, primary buttons */
+  --color-accent: #F97316;    /* Thermal Coral: CTAs, hover states, badges */
+  --color-accent-dark: #EA580C; /* hover shade of the accent */
+  --color-border: #E2E8F0;    /* hairline borders that separate surface from background */
+  --color-muted: #475569;     /* secondary text: dates, captions */
+  --color-overlay: rgba(248, 250, 252, 0.88); /* hero title card */
+  --color-panel: rgba(248, 250, 252, 0.97);   /* photo info panel */
+  color-scheme: light;
+}
+
+/* Dark mode: same palette family, flipped. Toggled from the navbar. */
+[data-theme='dark'] {
+  --color-bg: #0F172A;        /* Deep Troposphere */
+  --color-surface: #1E293B;
+  --color-text: #E2E8F0;
+  --color-primary: #38BDF8;   /* lighter Stratosphere Blue, readable on dark */
+  --color-accent: #F97316;    /* Thermal Coral */
+  --color-accent-dark: #EA580C;
+  --color-border: #334155;
+  --color-muted: #94A3B8;
+  --color-overlay: rgba(15, 23, 42, 0.82);
+  --color-panel: rgba(30, 41, 59, 0.97);
+  color-scheme: dark;
+}
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0f0f1c;
-  color: #f0f0f5;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Buttons and form fields don't inherit the page font by default */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
 }
 
 .video-container {
@@ -48,23 +87,23 @@ body {
   z-index: 2;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
+  background-color: var(--color-overlay);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.25);
+  backdrop-filter: blur(6px);
 }
 
 .video-overlay-text h1 {
-  color: #8a2be2;
+  color: var(--color-text);
   font-size: 2.5rem;
   margin: 0;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 .video-overlay-text p {
-  color: #dce8f2;
+  color: var(--color-primary);
   font-size: 1.2rem;
+  font-weight: 600;
   margin-top: 0.5rem;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
 }
 
 .grid {
@@ -83,31 +122,35 @@ body {
 }
 
 .update-tile {
-  background-color: #1c1c2e;
+  background-color: var(--color-surface);
   padding: 1.5rem;
   border-radius: 8px;
-  color: #dce8f2;
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  color: var(--color-text);
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .update-tile:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+  border-left-color: var(--color-accent);
 }
 
 .update-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #5bc0ff;
+  color: var(--color-text);
   margin-bottom: 0.5rem;
 }
 
 .update-date {
   font-size: 0.95rem;
-  color: #a9b1bd;
+  color: var(--color-muted);
 }
 
 .about-section {
@@ -125,14 +168,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0f0f1c;
+  background-color: var(--color-bg);
 }
 
 .about-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
   transform: scale(1.02);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -140,8 +183,8 @@ body {
 .about-text {
   flex: 1;
   padding: 4rem;
-  background-color: #0f0f1c;
-  color: #f0f0f5;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -150,39 +193,39 @@ body {
 
 .about-text h2 {
   font-size: 2.5rem;
-  color: #8a2be2;
+  color: var(--color-primary);
 }
 
 .about-text p {
   font-size: 1.1rem;
-  color: #dce8f2;
+  color: var(--color-text);
   margin-bottom: 0.5rem;
 }
 
 .footer {
   margin-top: 4rem;
   padding: 2rem 1rem;
-  background-color: var(--color-charcoal-black);
+  background-color: var(--color-surface);
   text-align: center;
-  color: var(--color-light-gray-blue);
+  color: var(--color-text);
 }
 
 .footer h3 {
-  color: var(--color-sky-blue);
+  color: var(--color-primary);
   font-size: 1.8rem;
 }
 
 .footer img {
   width: 100%;
   max-width: 720px;
-  background: var(--color-light-gray-blue);
+  background: var(--color-surface);
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
 }
 
 .footer-icons a {
-  color: #5bc0ff;
+  color: var(--color-primary);
   margin: 0 0.5rem;
   font-size: 1.2rem;
   transition: color 0.3s ease;
