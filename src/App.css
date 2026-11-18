@@ -1,12 +1,12 @@
 /* Site palette: change colors here and they update everywhere */
 :root {
-  --color-bg: #F8FAFC;        /* Cloud White: page background */
-  --color-surface: #F1F5F9;   /* Mist Grey: cards, code blocks, abstracts */
+  --color-bg: #EEF2F6;        /* Mist Grey page: softer than pure white */
+  --color-surface: #F8FAFC;   /* Cloud White: cards sit slightly lighter than the page */
   --color-text: #0F172A;      /* Deep Troposphere: body text and headings */
   --color-primary: #0284C7;   /* Stratosphere Blue: nav links, section headers, primary buttons */
   --color-accent: #F97316;    /* Thermal Coral: CTAs, hover states, badges */
   --color-accent-dark: #EA580C; /* hover shade of the accent */
-  --color-border: #E2E8F0;    /* hairline borders that separate surface from background */
+  --color-border: #DDE3EA;    /* hairline borders that separate surface from background */
   --color-muted: #475569;     /* secondary text: dates, captions */
   --color-overlay: rgba(248, 250, 252, 0.88); /* hero title card */
   --color-panel: rgba(248, 250, 252, 0.97);   /* photo info panel */
