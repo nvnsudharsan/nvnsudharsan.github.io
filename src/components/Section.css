@@ -108,8 +108,7 @@
   color: inherit;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
-  /* height: 340px; */
-  aspect-ratio: 3 / 4;
+  /* no fixed card shape: the text area grows to fit, so titles never sit on the picture */
 }
 
 .tile:hover {
@@ -119,8 +118,8 @@
 }
 
 .tile-image {
-  flex: 0 0 70%;
-  height: 70%;
+  flex: 0 0 auto;
+  aspect-ratio: 15 / 14; /* same picture shape as before */
   overflow: hidden;
   background-color: #F1F5F9; /* keeps transparent logos visible in dark mode */
 }
@@ -132,12 +131,11 @@
 }
 
 .tile-content {
-  flex: 0 0 30%;
-  height: 30%;
+  flex: 1 1 auto;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .tile-content h2,
