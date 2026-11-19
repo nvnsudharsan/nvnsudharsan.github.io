@@ -421,15 +421,25 @@
   }
   
   .pg-photo-info {
-    min-width: 90vw;
-    max-width: 90vw;
+    width: 100%;
+    min-width: 0;
+    max-width: 480px;
+    box-sizing: border-box;
     padding: 1rem;
   }
-  
+
+  /* arrows sit in the bottom corners so they never cover the photo details */
+  .pg-lightbox-content {
+    padding-bottom: 4rem;
+  }
+
   .pg-nav {
     width: 2.5rem;
     height: 2.5rem;
     font-size: 2rem;
+    top: auto;
+    bottom: 1rem;
+    transform: none;
   }
   
   .pg-prev { left: 0.5rem; }
@@ -452,8 +462,10 @@
   }
   
   .pg-photo-info {
-    min-width: 95vw;
-    max-width: 95vw;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 0.75rem;
   }
   

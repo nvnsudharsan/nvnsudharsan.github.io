@@ -7,7 +7,15 @@
   box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
   padding: 1rem 2rem;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 2rem);
+  margin-left: auto;
 }
 
 .logo-image {
@@ -44,7 +52,8 @@
   color: var(--color-accent);
 }
 
-.theme-toggle {
+.theme-toggle,
+.menu-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,33 +69,64 @@
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-.theme-toggle:hover {
+.theme-toggle:hover,
+.menu-toggle:hover {
   color: var(--color-accent);
   border-color: var(--color-accent);
 }
 
-.theme-toggle:focus-visible {
+.theme-toggle:focus-visible,
+.menu-toggle:focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 
+/* the menu button only appears at phone width */
+.menu-toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-    overflow: visible;
+    padding: 0.6rem 1rem;
   }
 
+  .logo-image {
+    height: 40px;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* links become a drop-down under the bar */
   .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-    margin: 1rem 0 0;
-    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 0;
+    margin: 0;
+    padding: 0.5rem 0;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 
   .nav-links li a {
-    font-size: 1.2rem;
+    display: block;
+    padding: 0.85rem 1.5rem;
+    font-size: 1.15rem;
   }
 }

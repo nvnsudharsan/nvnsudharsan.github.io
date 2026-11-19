@@ -269,4 +269,24 @@ textarea {
   .footer {
     padding: 1.5rem 1rem;
   }
+
+  /* home hero: shorter, with a welcome box that fits a phone */
+  .video-container {
+    height: 62vh;
+  }
+
+  .video-overlay-text {
+    width: calc(100% - 2.5rem);
+    box-sizing: border-box;
+    padding: 1rem 1.25rem;
+  }
+
+  .video-overlay-text h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .video-overlay-text p {
+    font-size: 1rem;
+  }
 }

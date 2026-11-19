@@ -77,17 +77,6 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .about-text,
-  .about-image {
-    padding: 1rem 0;
-  }
-
-  .about-section {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
 
 .grid {
   display: grid;
@@ -319,4 +308,67 @@
 .gh-grade-caption {
   font-size: 0.8rem;
   color: var(--color-muted);
+}
+
+/* ---------- phone layout ---------- */
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  /* page titles carry inline sizes for desktop; scale them down on phones */
+  .section > h2 {
+    font-size: 2rem !important;
+  }
+
+  .tile-content h2 {
+    font-size: 1.25rem !important;
+  }
+
+  /* About: photo on top, then the text at full width (no inner scroll box) */
+  .about-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-image {
+    order: -1;
+    flex: none;
+    width: 100%;
+    height: 55vh;
+    padding: 0;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+  }
+
+  .about-text {
+    flex: none;
+    overflow: visible;
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .resume-style ul {
+    padding-left: 1.25rem;
+  }
+
+  .github-stats-row img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  /* stats card: grade ring above the numbers */
+  .gh-card-body {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .gh-grade {
+    order: -1;
+  }
 }
